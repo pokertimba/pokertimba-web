@@ -254,7 +254,8 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <h2>Únete a la lista de espera</h2>
     <p>Sé el primero en enterarte cuando salgan el curso y la mesa de práctica, con un precio especial de lanzamiento para la lista.</p>
-    <form class="form" id="waitForm" name="lista-espera" method="POST" data-netlify="true">
+    <form class="form" id="waitForm" name="lista-espera" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="bot-field">
       <input type="hidden" name="form-name" value="lista-espera">
       <input type="email" name="email" id="email" required placeholder="Tu email" aria-label="Tu email" autocomplete="email">
       <button class="btn" type="submit">Apuntarme</button>
